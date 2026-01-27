@@ -253,9 +253,8 @@ if _G.Configuration.AutoReconnect then
 	end)
 
 	game:GetService("GuiService").ErrorMessageChanged:Connect(function()
-		-- If solo or disconnected, teleport back to same server
-		local isSolo = #Players:GetPlayers() <= 1
-		if isSolo or true then
+		-- If disconnected, teleport back to same server
+		if true then
 			task.spawn(function()
 				TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
 			end)
