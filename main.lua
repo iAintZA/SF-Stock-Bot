@@ -1,11 +1,5 @@
 --[[
-    SuperForest – Shop Stock Webhook Bot (Advanced)
-    Features:
-    - Real-time Knit restock tracking
-    - Change detection
-    - Category-based colors
-    - Global + item-specific role pings
-    - 3-column embeds (max 5 items per column)
+    SuperForest – Shop Stock Webhook Bot
 ]]
 
 --// =========================
