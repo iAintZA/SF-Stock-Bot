@@ -32,7 +32,7 @@ This is **not a traditional bot**. It’s a **webhook-based client-side tracker*
    - Required for automatic execution.
 
 2. **Place the Script**  
-   - loadstring(game:HttpGet("https://raw.githubusercontent.com/iAintZ4/SF-Stock-Bot/refs/heads/main/main.lua"))()
+   - loadstring(game:HttpGet("https://raw.githubusercontent.com/iAintZA/SF-Stock-Bot/refs/heads/main/main.lua"))()
 
 3. **Configure Webhooks**  
    - Set up a **Discord webhook** where notifications will be sent.  
