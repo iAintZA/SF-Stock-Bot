@@ -17,12 +17,18 @@ _G.Configuration = {
 	ItemRolePings = {
 		["Toadstool Tree"] = "<@&1465559753915896034>",
 		["Illustrious Tree"] = "<@&1465559833456414867>",
+		["Enchanted Tulip"] = "<@&1465560026427953202>",
+		["Crystal Tulip"] = "<@&1465560076759732367>",
+		["Enchanted Orchid"] = "<@&1465560138029994095>",
+		["Enchanted Willow"] = "<@&1465577332051017741>",
 		["Illustrious Tile"] = "<@&1465560287615779023>",
 		["Crystal Tile"] = "<@&1465560355450261783>",
 		["Bush Tile"] = "<@&1465560245525942336>",
 		["TimeBoost Rare"] = "<@&1465560472932716687>",
 		["CloudBoost Legendary"] = "<@&1465560524799606827>",
 		["Large Floating Lantern"] = "<@&1465560682400317646>",
+		["Fireflies"] = "<@&1465560599390978070>",
+		["Spirit Spring"] = "<@&1465560643703803964>",
 	},
 
 	AntiAFK = true,
