@@ -29,6 +29,8 @@ _G.Configuration = {
 		["Large Floating Lantern"] = "<@&1465560682400317646>",
 		["Fireflies"] = "<@&1465560599390978070>",
 		["Spirit Spring"] = "<@&1465560643703803964>",
+		["Waterfall"] = "<@&1466574492213055729>",
+		
 	},
 
 	AntiAFK = true,
