@@ -71,7 +71,8 @@ local ShopCategories = {
 	[1] = { Name = "Tiles",      Color = Color3.fromRGB(80, 170, 255) },
 	[2] = { Name = "Trees",      Color = Color3.fromRGB(80, 255, 140) },
 	[3] = { Name = "Booster",    Color = Color3.fromRGB(255, 215, 80) },
-	[4] = { Name = "Decoration", Color = Color3.fromRGB(200, 120, 255) },
+	[4] = { Name = "Decorations", Color = Color3.fromRGB(200, 120, 255) },
+	[5] = { Name = "Tools", Color = Color3.fromRGB(200, 120, 255) },
 }
 
 --// =========================
