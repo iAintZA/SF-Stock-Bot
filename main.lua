@@ -267,7 +267,7 @@ if _G.Configuration.AutoReconnect then
 		-- If disconnected, teleport back to same server
 		if true then
 			task.spawn(function()
-				TeleportService:TeleportToPlaceInstance(PlaceId, JobId, LocalPlayer)
+				TeleportService:Teleport(game.PlaceId, player)
 			end)
 		end
 	end)
