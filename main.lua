@@ -41,7 +41,6 @@ _G.Configuration = {
 	},
 
 	AntiAFK = true,
-	AutoReconnect = true,
 }
 
 --// =========================
@@ -55,8 +54,7 @@ local VirtualUser = cloneref(game:GetService("VirtualUser"))
 local TeleportService = game:GetService("TeleportService")
 
 local LocalPlayer = Players.LocalPlayer
-local PlaceId = game.PlaceId
-local JobId = game.JobId
+
 --// =========================
 --// KNIT REMOTES
 --// =========================
@@ -72,11 +70,11 @@ local GetCategoryStockRF = ReplicatedStorage.Packages._Index["sleitnick_knit@1.7
 --// =========================
 
 local ShopCategories = {
-	[1] = { Name = "Tiles",      Color = Color3.fromRGB(80, 170, 255) },
-	[2] = { Name = "Trees",      Color = Color3.fromRGB(80, 255, 140) },
-	[3] = { Name = "Booster",    Color = Color3.fromRGB(255, 215, 80) },
-	[4] = { Name = "Decorations", Color = Color3.fromRGB(200, 120, 255) },
-	[5] = { Name = "Tools", Color = Color3.fromRGB(200, 120, 255) },
+	[1] = { Name = "Tiles",      	Color = Color3.fromRGB(80, 170, 255) },
+	[2] = { Name = "Trees",      	Color = Color3.fromRGB(80, 255, 140) },
+	[3] = { Name = "Booster",    	Color = Color3.fromRGB(255, 215, 80) },
+	[4] = { Name = "Decorations", 	Color = Color3.fromRGB(200, 120, 255) },
+	[5] = { Name = "Tools", 		Color = Color3.fromRGB(200, 120, 255) },
 }
 
 --// =========================
@@ -259,21 +257,4 @@ if _G.Configuration.AntiAFK then
 	end)
 end
 
---// =========================
---// AUTO RECONNECT
---// =========================
-
-if _G.Configuration.AutoReconnect then
-	Players.LocalPlayer.OnTeleport:Connect(function()
-		-- Nothing needed, already teleporting
-	end)
-
-	game:GetService("GuiService").ErrorMessageChanged:Connect(function()
-		-- If disconnected, teleport back to same server
-		if true then
-			task.spawn(function()
-				TeleportService:Teleport(game.PlaceId, player)
-			end)
-		end
-	end)
 end
